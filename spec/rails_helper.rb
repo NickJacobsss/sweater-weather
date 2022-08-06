@@ -23,6 +23,12 @@ require 'rspec/rails'
 # Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 require 'simplecov'
 SimpleCov.start 'rails'
+SimpleCov.add_filter 'app/channels/application_cable/channel.rb'
+SimpleCov.add_filter 'app/channels/application_cable/connection.rb'
+SimpleCov.add_filter 'app/mailers/application_mailer.rb'
+SimpleCov.add_filter 'app/models/application_record.rb'
+SimpleCov.add_filter 'app/jobs/application_job.rb'
+SimpleCov.add_filter 'app/controllers/application_controller.rb'
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
 begin
