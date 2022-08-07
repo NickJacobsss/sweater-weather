@@ -2,7 +2,7 @@ class Route
   attr_reader :seconds, :unformatted_time
 
   def initialize(route_data)
-    @seconds = route_data[:route][:realTime]
+    @seconds = route_data[:route][:legs][0][:time]
     @unformatted_time = route_data[:route][:formattedTime]
   end
 
