@@ -18,7 +18,7 @@ class RoadTripSerializer
   }
   end
 
-  def self.impossible_route
+  def self.impossible_route(start, finish)
     {
     "data": {
       "id": "null",
