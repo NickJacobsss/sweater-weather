@@ -5,9 +5,13 @@ class Api::V1::RoadTripController < ApplicationController
     finish = params[:destination]
     key = params[:api_key]
     if User.find_by(api_key: key)
-      trip = RoadTripFacade.get_route(start,finish)
+      forecast_and_time = RoadTripFacade.get_future_forecast(start,finish)
+      render json: RoadTripSerializer.format_road_trip(start, finish, forecast_and_time)
+      # else
+      #   render json: RoadTripSerializer.impossible_route
+      # end
     else
-      render json: {error: new_user.errors.full_messages.to_sentence}, status: 400
+      render json: {error: "Unauthorized API Key"}, status: 400
     end
   end
 
