@@ -22,7 +22,9 @@ RSpec.describe RoadTrip do
     }
 
     road_trip = RoadTrip.new(route, forecast)
-    expect(road_trip.finished_forecast.class).to eq(HourlyWeather)
+    expect(road_trip.finished_forecast[:temp]).to eq(71.58)
+    expect(road_trip.finished_forecast[:conditions]).to eq("Clear")
+    expect(road_trip.travel_time).to eq("13 Hours, 52 Minutes")
   end
 
   it "can create a roadtrip object over 24 hours route" do
@@ -44,7 +46,8 @@ RSpec.describe RoadTrip do
       daily: forecast_daily
     }
     road_trip = RoadTrip.new(route, forecast)
-    expect(road_trip.finished_forecast.class).to eq(DailyWeather)
-
+    expect(road_trip.finished_forecast[:temp]).to eq(88.25)
+    expect(road_trip.finished_forecast[:conditions]).to eq("Rain")
+    expect(road_trip.travel_time).to eq("31 Hours, 13 Minutes")
   end
 end
