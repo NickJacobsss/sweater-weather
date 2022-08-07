@@ -38,6 +38,15 @@ RSpec.describe "Forecast Request" do
       expect(forecast[:attributes][:hourly_weather].first[:temperature]).to be_a Float
       expect(forecast[:attributes][:hourly_weather].first[:conditions]).to be_a String
       expect(forecast[:attributes][:hourly_weather].first[:icon]).to be_a String
+
+      expect(forecast[:attributes][:hourly_weather].first).to_not have_key :sunset
+      expect(forecast[:attributes][:hourly_weather].first).to_not have_key :sunrise
+
+      expect(forecast[:attributes][:daily_weather].first).to_not have_key :humidity
+      expect(forecast[:attributes][:daily_weather].first).to_not have_key :visibility
+
+      expect(forecast[:attributes][:current_weather]).to_not have_key :max_temp
+      expect(forecast[:attributes][:current_weather]).to_not have_key :min_temp
     end
   end
 
@@ -49,5 +58,5 @@ RSpec.describe "Forecast Request" do
       error = JSON.parse(response.body, symbolize_names: true)
       expect(error[:error]).to eq("please enter city & state")
     end
-  end 
+  end
 end
