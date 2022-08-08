@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       post '/users', to: "users#create"
       post '/sessions', to: "sessions#index"
       post '/roadtrip', to: "road_trip#index"
+      get '/munchies', to: "munchies#index"
     end
   end
 end
