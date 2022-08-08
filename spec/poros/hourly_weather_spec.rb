@@ -8,7 +8,7 @@ RSpec.describe HourlyWeather do
     expect(hourly_weather.conditions).to eq("Rain")
     expect(hourly_weather.icon).to eq("10d")
     expect(hourly_weather.temp).to eq(83.86)
-    expect(hourly_weather.time).to eq("2022-08-06 13:00:00 -0500")
+    expect(hourly_weather.time).to eq("13:00")
   end
 
 end
