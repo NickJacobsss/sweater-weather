@@ -3,7 +3,8 @@
 ## About This Project
 **Sweater Weather** is a backend service-oriented application that allows the creation of secure users, gets relevant weather information for any location, finds restaurants based on category & location with it's current weather, and even projected weather & time enroute information for a trip you may be planning.
  
-Built with **Ruby on Rails**, it consumes muiltiple external API's while hosting it's own API for the Front End. Sweater Weather utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data.
+Built with **Ruby on Rails**, it consumes muiltiple external API's while hosting it's own API for the Front End. <br>
+<b>Sweater Weather</b> utilizes **Ruby on Rails** with **PostgreSQL** database to store its relational data.
 
   <br>
   
