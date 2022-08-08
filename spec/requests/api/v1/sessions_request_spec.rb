@@ -12,7 +12,7 @@ RSpec.describe "Login Request" do
   end
 
   describe "happy path" do
-    it "returns a users information if credentials are correct" do
+    it "returns a users information if credentials are correct", :vcr do
       login_header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       login_body = {
         "email": "nickee@nick.com",
@@ -32,7 +32,7 @@ RSpec.describe "Login Request" do
   end
 
   describe "sad path" do
-    it "returns an error when email doesnt exist" do
+    it "returns an error when email doesnt exist", :vcr do
       login_header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       login_body = {
         "email": "nickeeeeeee@nick.com",
@@ -45,7 +45,7 @@ RSpec.describe "Login Request" do
       expect(error[:error]).to eq("Invalid Credentials, Try Again")
     end
 
-    it "returns an error when password is incorrect" do
+    it "returns an error when password is incorrect", :vcr do
       login_header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       login_body = {
         "email": "nickee@nick.com",

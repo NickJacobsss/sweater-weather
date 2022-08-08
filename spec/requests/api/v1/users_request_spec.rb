@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "User Create Request" do
   describe "happy path" do
-    it "creates and returns a new user if all requirements are met" do
+    it "creates and returns a new user if all requirements are met", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       body = {
         "email": "nickee@nick.com",
@@ -24,7 +24,7 @@ RSpec.describe "User Create Request" do
   end
 
   describe "sad path" do
-    it "gives an error when passwords do not match " do
+    it "gives an error when passwords do not match ", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       body = {
         "email": "nickee@nick.com",
@@ -37,7 +37,7 @@ RSpec.describe "User Create Request" do
       expect(error[:error]).to eq("Password confirmation doesn't match Password")
     end
 
-    it "gives an error when missing a field" do
+    it "gives an error when missing a field", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       body = {
         "password": "password",

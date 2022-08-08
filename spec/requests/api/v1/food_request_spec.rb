@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "Food Request" do
-  
+
   describe "happy path" do
-    it "returns food and weather information for business location" do
+    it "returns food and weather information for business location", :vcr do
       get "/api/v1/munchies?location=denver,co&food=chinese"
       data = JSON.parse(response.body, symbolize_names: true)[:data]
       expect(data[:id]).to eq("null")
@@ -17,7 +17,7 @@ RSpec.describe "Food Request" do
   end
 
   describe "sad path" do
-    it "returns an error when no food param is given " do
+    it "returns an error when no food param is given ", :vcr do
       get "/api/v1/munchies?location=denver,co"
       data = JSON.parse(response.body, symbolize_names: true)
       expect(data[:error]).to eq("please enter location & food type")

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Road Trip Facade" do
-  it "returns roadtrip object with forecast data for destination" do
+  it "returns roadtrip object with forecast data for destination", :vcr do
     road_trip = RoadTripFacade.get_future_forecast("dayton, OH", "Baton Rouge, LA")
 
     expect(road_trip).to be_a RoadTrip

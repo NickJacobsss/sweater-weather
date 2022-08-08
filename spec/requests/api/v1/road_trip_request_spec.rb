@@ -11,7 +11,7 @@ RSpec.describe "Road Trip Request" do
   end
 
   describe "happy path" do
-    it "returns road trip info including weather and travel time " do
+    it "returns road trip info including weather and travel time ", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       body = {
         "origin": "dayton, oh",
@@ -30,7 +30,7 @@ RSpec.describe "Road Trip Request" do
   end
 
   describe "sad path" do
-    it "returns an error when api key does not match a user " do
+    it "returns an error when api key does not match a user ", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       body = {
         "origin": "dayton, oh",
@@ -43,7 +43,7 @@ RSpec.describe "Road Trip Request" do
       expect(road_trip[:error]).to eq("Unauthorized API Key")
     end
 
-    it "returns an impossible route JSON if route is impossible" do
+    it "returns an impossible route JSON if route is impossible", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       body = {
         "origin": "dayton, oh",
