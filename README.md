@@ -148,9 +148,3 @@ $ rails s
 </p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-## Contributors
-
-- Author: [Nick Jacobs](https://github.com/NickJacobsss)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
