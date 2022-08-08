@@ -1,7 +1,6 @@
 class FoodSerializer
 
   def self.format_food(food, forecast, location)
-    binding.pry
     {
       "data": {
         "id": "null",
