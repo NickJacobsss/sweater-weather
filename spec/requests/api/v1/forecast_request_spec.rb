@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Forecast Request" do
   describe "happy paths" do
-    it "returns a forecast when given a city and state" do
+    it "returns a forecast when given a city and state", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       location = 'dayton,oh'
 
@@ -50,7 +50,7 @@ RSpec.describe "Forecast Request" do
   end
 
   describe "sad paths" do
-    it "returns an error message when no location is passed" do
+    it "returns an error message when no location is passed", :vcr do
       header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
 
       get '/api/v1/forecast', headers: header

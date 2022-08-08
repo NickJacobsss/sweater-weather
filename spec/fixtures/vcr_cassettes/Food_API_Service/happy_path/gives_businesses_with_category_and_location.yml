@@ -1,0 +1,270 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=dayton,%20oh&term=chinese%20food
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 4bpKVNSgdtglHQNI8B-F3PXmUBhNUjO3-stuQObuO9gkCx_rHosMahLY921_X8j4ySwZIJo7rLBADoBt4QIAaSb1vXdfA0mfnRJpJ4Vf36gh24cD00D8E8ZZ0CTxYnYx
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4924'
+      Ratelimit-Resettime:
+      - '2022-08-09T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-5db947469f-2dcz5; site=public_api_v3
+      X-Zipkin-Id:
+      - 3e3d35c2805cf1f3
+      X-Cloudmap:
+      - routing_useast1
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-133-10-useast1bprod
+      X-Extlb:
+      - 10-65-133-10-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Aug 2022 18:37:03 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-fty21332-FTY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "EWxSenxBsfQYJWxpxLWhXQ", "alias": "kung-fu-noodle-dayton",
+        "name": "Kung Fu Noodle", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YCnQxETs7O_9lm27pWU7rw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kung-fu-noodle-dayton?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 138, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "noodles", "title": "Noodles"}, {"alias": "bbq", "title": "Barbeque"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7125, "longitude": -84.20062},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "2801 S Dixie Dr", "address2": "Ste 3", "address3": "", "city": "Dayton",
+        "zip_code": "45409", "country": "US", "state": "OH", "display_address": ["2801
+        S Dixie Dr", "Ste 3", "Dayton, OH 45409"]}, "phone": "+19379389027", "display_phone":
+        "(937) 938-9027", "distance": 4200.206702279167}, {"id": "RiHAQvC5Ee_GnwwIg3EQQg",
+        "alias": "cj-chan-dayton-2", "name": "CJ Chan", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/PqgFmAr1Z45Y1s8xUprCFw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cj-chan-dayton-2?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 236, "categories": [{"alias": "japanese", "title": "Japanese"},
+        {"alias": "chinese", "title": "Chinese"}], "rating": 4.5, "coordinates": {"latitude":
+        39.73312, "longitude": -84.15901}, "transactions": ["delivery"], "price":
+        "$", "location": {"address1": "536 Wilmington Ave", "address2": "", "address3":
+        "", "city": "Dayton", "zip_code": "45420", "country": "US", "state": "OH",
+        "display_address": ["536 Wilmington Ave", "Dayton, OH 45420"]}, "phone": "+19372599866",
+        "display_phone": "(937) 259-9866", "distance": 99.8980894788757}, {"id": "U1p03J49cUkXOzPZPBdaog",
+        "alias": "fu-mon-lau-centerville", "name": "Fu Mon Lau", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/j7-s1lVL5xM22CH--O_NWA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/fu-mon-lau-centerville?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 57, "categories": [{"alias": "cantonese", "title": "Cantonese"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "noodles", "title": "Noodles"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.63338, "longitude": -84.2069},
+        "transactions": ["delivery"], "location": {"address1": "2008 Miamisburg Centerville
+        Rd", "address2": null, "address3": "", "city": "Centerville", "zip_code":
+        "45459", "country": "US", "state": "OH", "display_address": ["2008 Miamisburg
+        Centerville Rd", "Centerville, OH 45459"]}, "phone": "+19372932211", "display_phone":
+        "(937) 293-2211", "distance": 11731.889740343599}, {"id": "3PFOajhLeF8uXS1Ns9MUqw",
+        "alias": "north-village-chinese-restaurant-dayton-2", "name": "North Village
+        Chinese Restaurant", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VDdvf5xEaV6IavqVbQ0cng/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/north-village-chinese-restaurant-dayton-2?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 55, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.74197, "longitude": -84.18281},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "137 Jasper St", "address2": "", "address3": "", "city": "Dayton", "zip_code":
+        "45409", "country": "US", "state": "OH", "display_address": ["137 Jasper St",
+        "Dayton, OH 45409"]}, "phone": "+19372235898", "display_phone": "(937) 223-5898",
+        "distance": 2267.2624978086683}, {"id": "WKBHBgDRn1mBSD8Hnl44XA", "alias":
+        "ginger-and-spice-asian-bistro-dayton", "name": "Ginger and Spice Asian Bistro",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/OCe-wFYqlQ3rnZzrF75lDA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ginger-and-spice-asian-bistro-dayton?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 173, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.7434227, "longitude": -84.1827831}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "1105 Brown St", "address2": null,
+        "address3": "", "city": "Dayton", "zip_code": "45409", "country": "US", "state":
+        "OH", "display_address": ["1105 Brown St", "Dayton, OH 45409"]}, "phone":
+        "+19377161298", "display_phone": "(937) 716-1298", "distance": 2356.003781908522},
+        {"id": "Vp2qaFvAOlEt8lSbcam7xQ", "alias": "china-cottage-dayton-3", "name":
+        "China Cottage", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ymbNNlgli9QcnR7joDLM9Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/china-cottage-dayton-3?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 61, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.69301, "longitude": -84.13609},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "3718
+        Wilmington Pike", "address2": "", "address3": "", "city": "Dayton", "zip_code":
+        "45429", "country": "US", "state": "OH", "display_address": ["3718 Wilmington
+        Pike", "Dayton, OH 45429"]}, "phone": "+19372944724", "display_phone": "(937)
+        294-4724", "distance": 4814.8557701179025}, {"id": "FFpDTb-qiwAqQc7XNHf6Nw",
+        "alias": "fuying-vandalia", "name": "Fuying", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/IUK-LKkkqiqCUn7mfszb2A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/fuying-vandalia?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 11, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.899645, "longitude": -84.183185},
+        "transactions": ["pickup", "delivery"], "location": {"address1": "790 Northwoods
+        Blvd", "address2": null, "address3": "", "city": "Vandalia", "zip_code": "45377",
+        "country": "US", "state": "OH", "display_address": ["790 Northwoods Blvd",
+        "Vandalia, OH 45377"]}, "phone": "+19377427199", "display_phone": "(937) 742-7199",
+        "distance": 18694.347122097126}, {"id": "dm1VjiE9d4nMy2A3waDtfQ", "alias":
+        "cj-chan-moraine-2", "name": "CJ Chan", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/8p2Q1W21WIERKELHLGQk7w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cj-chan-moraine-2?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 73, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "sushi", "title": "Sushi Bars"}, {"alias": "asianfusion", "title":
+        "Asian Fusion"}], "rating": 4.0, "coordinates": {"latitude": 39.6733814417367,
+        "longitude": -84.2175016932541}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "2747 W Alex Bell Rd", "address2": "", "address3":
+        "", "city": "Moraine", "zip_code": "45459", "country": "US", "state": "OH",
+        "display_address": ["2747 W Alex Bell Rd", "Moraine, OH 45459"]}, "phone":
+        "+19372598882", "display_phone": "(937) 259-8882", "distance": 8228.927929914218},
+        {"id": "lxl2DSD-5t5HgN2noBG_kA", "alias": "shens-szechuan-and-sushi-vandalia",
+        "name": "Shen''s Szechuan & Sushi", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_2Bveu0UXgTNIrFuAmHNdA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/shens-szechuan-and-sushi-vandalia?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 184, "categories": [{"alias": "sushi", "title": "Sushi Bars"},
+        {"alias": "szechuan", "title": "Szechuan"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.85729, "longitude": -84.18683}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "7580 Poe Ave", "address2":
+        "", "address3": "", "city": "Vandalia", "zip_code": "45414", "country": "US",
+        "state": "OH", "display_address": ["7580 Poe Ave", "Vandalia, OH 45414"]},
+        "phone": "+19378983860", "display_phone": "(937) 898-3860", "distance": 14035.577634892328},
+        {"id": "NCDSPpJ9YrlWdr5xZSp7eQ", "alias": "peking-garden-dayton-2", "name":
+        "Peking Garden", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YRZERGTkALSGYFVXlukL3w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/peking-garden-dayton-2?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 49, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.662658, "longitude": -84.1289724},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "2132
+        E Whipp Rd", "address2": "", "address3": "", "city": "Dayton", "zip_code":
+        "45440", "country": "US", "state": "OH", "display_address": ["2132 E Whipp
+        Rd", "Dayton, OH 45440"]}, "phone": "+19374345888", "display_phone": "(937)
+        434-5888", "distance": 8218.325094265852}, {"id": "m81HCW0BqlTV04hKjqycZg",
+        "alias": "north-china-restaurant-centerville", "name": "North China Restaurant",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xIo_xibaxdm1NkWv4guiqg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/north-china-restaurant-centerville?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 88, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.6560325622559, "longitude":
+        -84.1564483642578}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "6090 Far Hills Ave", "address2": "", "address3":
+        "", "city": "Centerville", "zip_code": "45459", "country": "US", "state":
+        "OH", "display_address": ["6090 Far Hills Ave", "Centerville, OH 45459"]},
+        "phone": "+19374336837", "display_phone": "(937) 433-6837", "distance": 8495.09299416021},
+        {"id": "LMTxMlR-kuAX06mlSDKH2A", "alias": "tsaos-cuisine-fairborn", "name":
+        "Tsao''s Cuisine", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Tvif1zimeFrYS9aeRT09ZA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tsaos-cuisine-fairborn?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 120, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.77419, "longitude": -84.0792699},
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
+        "3989 B Colonel Glenn Hwy", "address2": "", "address3": "", "city": "Fairborn",
+        "zip_code": "45431", "country": "US", "state": "OH", "display_address": ["3989
+        B Colonel Glenn Hwy", "Fairborn, OH 45431"]}, "phone": "+19374295899", "display_phone":
+        "(937) 429-5899", "distance": 8279.289706599111}, {"id": "i_0waQZHn-gvb0SKhJYRPQ",
+        "alias": "wat-da-pho-beavercreek-3", "name": "Wat da Pho", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/gvT0aabUk_6pFSbr_1Ks-Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/wat-da-pho-beavercreek-3?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 242, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
+        {"alias": "noodles", "title": "Noodles"}, {"alias": "soup", "title": "Soup"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.772329, "longitude": -84.060129},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "3464 Pentagon Blvd", "address2": "Ste D", "address3": null, "city": "Beavercreek",
+        "zip_code": "45431", "country": "US", "state": "OH", "display_address": ["3464
+        Pentagon Blvd", "Ste D", "Beavercreek, OH 45431"]}, "phone": "+19379566060",
+        "display_phone": "(937) 956-6060", "distance": 9578.870560978947}, {"id":
+        "t-XzkC--HDd6-hXXQhn30Q", "alias": "yen-ching-house-englewood", "name": "Yen
+        Ching House", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YTGRJBOJnneeuyKcNp8b7Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/yen-ching-house-englewood?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 50, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.8681793, "longitude": -84.2929001},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "625
+        S Main St", "address2": "", "address3": "", "city": "Englewood", "zip_code":
+        "45322", "country": "US", "state": "OH", "display_address": ["625 S Main St",
+        "Englewood, OH 45322"]}, "phone": "+19378368868", "display_phone": "(937)
+        836-8868", "distance": 18932.554724398153}, {"id": "NAtgG0UHy2Ujt3aZQUpbAQ",
+        "alias": "asia-gourmet-riverside", "name": "Asia Gourmet", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/LnjCCm1rgsVpQRhK1YOHEg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/asia-gourmet-riverside?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 36, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "chinese", "title": "Chinese"}, {"alias": "thai", "title":
+        "Thai"}], "rating": 4.5, "coordinates": {"latitude": 39.7586713, "longitude":
+        -84.1089162}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "5518 Burkhardt Rd", "address2": "", "address3": "", "city": "Riverside",
+        "zip_code": "45431", "country": "US", "state": "OH", "display_address": ["5518
+        Burkhardt Rd", "Riverside, OH 45431"]}, "phone": "+19372532233", "display_phone":
+        "(937) 253-2233", "distance": 5214.105889548096}, {"id": "fsF0IUe9IyUFMrIMu6zTpQ",
+        "alias": "ozu852-englewood", "name": "Ozu852", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/v3osoo_PCd4ivhjjUwr6Sg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ozu852-englewood?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 128, "categories": [{"alias": "sushi", "title": "Sushi Bars"},
+        {"alias": "chinese", "title": "Chinese"}, {"alias": "japanese", "title": "Japanese"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.8634524033601, "longitude":
+        -84.3109773471951}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "852 Union Blvd", "address2": "", "address3": "", "city": "Englewood",
+        "zip_code": "45322", "country": "US", "state": "OH", "display_address": ["852
+        Union Blvd", "Englewood, OH 45322"]}, "phone": "+19378323000", "display_phone":
+        "(937) 832-3000", "distance": 19498.731877185066}, {"id": "gLSVGPS7U_Md6fvvfTZO4Q",
+        "alias": "china-garden-buffet-dayton-2", "name": "China Garden Buffet", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/BHMWrJHDoxNpN_IoYUJ01w/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/china-garden-buffet-dayton-2?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 66, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 2.5, "coordinates": {"latitude": 39.7683620425455, "longitude":
+        -84.1210704796256}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "112 Woodman Dr", "address2": "", "address3": null,
+        "city": "Dayton", "zip_code": "45431", "country": "US", "state": "OH", "display_address":
+        ["112 Woodman Dr", "Dayton, OH 45431"]}, "phone": "+19377819999", "display_phone":
+        "(937) 781-9999", "distance": 5173.3291004987395}, {"id": "G3inI9rdiyf55gtH8yPHNw",
+        "alias": "cj-fusian-xpress-dayton", "name": "CJ Fusian Xpress", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/0pYwb8I0SutWD3YnJg2CyQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/cj-fusian-xpress-dayton?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 2, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}], "rating": 4.5, "coordinates": {"latitude": 39.7587929, "longitude":
+        -84.1914063}, "transactions": ["delivery"], "location": {"address1": "20 S
+        Main St", "address2": "", "address3": "", "city": "Dayton", "zip_code": "45402",
+        "country": "US", "state": "OH", "display_address": ["20 S Main St", "Dayton,
+        OH 45402"]}, "phone": "+19374248440", "display_phone": "(937) 424-8440", "distance":
+        4038.286876328903}, {"id": "yTIkBV21mexSMOgI5roS3g", "alias": "new-china-xenia",
+        "name": "New China", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/5b_OforrQrMb7IIEmQZd9Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/new-china-xenia?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 15, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.6908456837855, "longitude":
+        -83.9590001}, "transactions": ["pickup", "delivery"], "price": "$", "location":
+        {"address1": "1856 W Park Sq", "address2": "", "address3": "", "city": "Xenia",
+        "zip_code": "45385", "country": "US", "state": "OH", "display_address": ["1856
+        W Park Sq", "Xenia, OH 45385"]}, "phone": "+19373728885", "display_phone":
+        "(937) 372-8885", "distance": 17751.97234337948}, {"id": "3lmtfWIefGo-9VJl65Grug",
+        "alias": "sky-asian-cuisine-kettering", "name": "Sky Asian Cuisine", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/wfwFwIWUOiMmNQanZE7RDw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/sky-asian-cuisine-kettering?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+        "review_count": 209, "categories": [{"alias": "sushi", "title": "Sushi Bars"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "thai", "title":
+        "Thai"}], "rating": 4.0, "coordinates": {"latitude": 39.686187, "longitude":
+        -84.127967}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "4090 Wilmington Pike", "address2": null, "address3": "", "city":
+        "Kettering", "zip_code": "45440", "country": "US", "state": "OH", "display_address":
+        ["4090 Wilmington Pike", "Kettering, OH 45440"]}, "phone": "+19379499883",
+        "display_phone": "(937) 949-9883", "distance": 5793.749740430481}], "total":
+        127, "region": {"center": {"longitude": -84.15939331054688, "latitude": 39.732355955275715}}}'
+  recorded_at: Mon, 08 Aug 2022 18:37:03 GMT
+recorded_with: VCR 6.1.0

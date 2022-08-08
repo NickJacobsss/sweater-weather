@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Geocode API Service" do
 
-  it "gives lat/long of city as response" do
+  it "gives lat/long of city as response", :vcr do
     location = GeocodeService.city_location('dayton,oh')
 
     expect(location).to be_a Hash

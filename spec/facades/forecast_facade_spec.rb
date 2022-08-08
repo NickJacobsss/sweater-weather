@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "ForecastFacade" do
 
-  it "returns current, hourly, and daily forecasts given a lat/long" do
+  it "returns current, hourly, and daily forecasts given a lat/long", :vcr do
     dayton_forecast = ForecastFacade.get_forecast(39.760982,-84.192203)
 
     expect(dayton_forecast).to include(:current,:daily,:hourly)

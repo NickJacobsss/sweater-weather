@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Geocode do
 
-  it "creates a geocode object with lat long" do
+  it "creates a geocode object with lat long", :vcr do
     data = GeocodeService.city_location('dayton,oh')
     dayton = Geocode.new(data)
 
