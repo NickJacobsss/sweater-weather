@@ -51,6 +51,12 @@ Built with **Ruby on Rails**, it consumes muiltiple external API's while hosting
         "api_key": "jgn983hy48thw9begh98h4539h4"
       }
       ```
+    - Find Nearest Restaurant in Category of Choice & Current Weather at it's Location:
+      ```
+       GET /api/v1/munchies?location=(location here)&food=(food type here) 
+       
+       [ex: GET /api/v1/munchies?location=denver,co&food=chinese]
+      ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
